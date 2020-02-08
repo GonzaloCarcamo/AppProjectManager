@@ -1,0 +1,78 @@
+<br>
+<table border='1'>
+    <thead class="text-justify">
+        <th>NAME</th>
+        <th>DESCRIPTION</th>
+        <th>START_DATE</th>
+        <th>END_DATE</th>
+        <th>STATE</th>
+
+
+    </thead>
+
+    <% @project_proposal.each do |project| %>
+
+    <tbody class="text-justify">
+        <td> <%= project.name %>  </td>
+        <td> <%= project.description %>  </td>
+        <td> <%= project.start_date %> </td>
+        <td> <%= project.end_date %> </td>
+        <td> <%= project.state %> </td>
+
+    </tbody>
+
+    <% end %>
+
+  </table>
+
+  <br>
+  <table border='1'>
+      <thead class="text-justify">
+        <th>NAME</th>
+        <th>DESCRIPTION</th>
+        <th>START_DATE</th>
+        <th>END_DATE</th>
+        <th>STATE</th>
+
+      </thead>
+
+      <% @project_in_progress.each do |project| %>
+
+      <tbody class="text-justify">
+        <td> <%= project.name %>  </td>
+        <td> <%= project.description %>  </td>
+        <td> <%= project.start_date %> </td>
+        <td> <%= project.end_date %> </td>
+        <td> <%= project.state %> </td>
+      </tbody>
+
+      <% end %>
+
+    </table>
+    <br>
+    <table border='1'>
+        <thead class="text-justify">
+          <th>NAME</th>
+          <th>DESCRIPTION</th>
+          <th>START_DATE</th>
+          <th>END_DATE</th>
+          <th>STATE</th>
+
+
+        </thead>
+
+        <% @project_finished.each do |project| %>
+
+        <tbody class="text-justify">
+          <td> <%= project.name %>  </td>
+          <td> <%= project.description %>  </td>
+          <td> <%= project.start_date %> </td>
+          <td> <%= project.end_date %> </td>
+          <td> <%= project.state %> </td>
+
+        </tbody>
+
+        <% end %>
+
+      </table>
+      <br>
